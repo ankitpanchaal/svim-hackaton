@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Hero = () => {
     return (
-        <div className="bg-[#f5f5f7] h-screen " >
+        <div className="bg-[#f5f5f7] lg:h-96 flex items-center justify-center" >
             <div className="max-w-[1200px]" >
                 <div className="items-center py-6 lg:flex lg:px-20">
                     <img src="https://www.apple.com/v/apple-watch-series-8/c/images/overview/health/health_hero__d63yvs2woguq_large.jpg" alt=""
