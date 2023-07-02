@@ -12,7 +12,7 @@ export const NavBar = () => {
         setIsOpen(!isOpen);
     };
 
-    const liStyle = "font-medium  hover:font-bold cursor-pointer text-[12px] uppercase"
+    const liStyle = "font-medium  hover:font-bold cursor-pointer text-sm uppercase lg:text-[12px]"
 
     return (
         <nav className='fixed w-[100%]' >
@@ -58,17 +58,17 @@ export const NavBar = () => {
             </div>
             {
                 isOpen &&
-                <div className="lg:hidden bg-[#ffafaf30] backdrop-blur-sm p-4 rounded-md w-60 absolute top-4 right-12 z-50" >
+                <div className="lg:hidden bg-[#ffafaf70] backdrop-blur-sm p-4 rounded-md w-60 absolute top-4 right-12 z-50" >
                     <Link onClick={toggleMenu} href="/" >
-                        <li className={liStyle} >HOME</li>
+                        <li className={`${liStyle} mb-2`} >HOME</li>
                     </Link>
 
                     <Link onClick={toggleMenu} href="about">
-                        <li className={liStyle}>ABOUT</li>
+                        <li className={`${liStyle} mb-2`}>ABOUT</li>
                     </Link>
 
                     <Link onClick={toggleMenu} href="contact">
-                        <li className={liStyle}>CONTECT US</li>
+                        <li className={`${liStyle} mb-4`}>CONTECT US</li>
                     </Link>
 
                     <div className="mt-2">

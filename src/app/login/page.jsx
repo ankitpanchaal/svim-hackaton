@@ -13,12 +13,14 @@ const page = () => {
                     className="h-full w-full object-cover"
                     alt="Fullscreen Image"
                 />
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 bg-[#00000060] rounded-md p-4 lg:w-80 z-10" >
-                    <div>
-                        <h1 className="text-4xl font-bold mb-1 text-[#FF676D]">Welcome Back!</h1>
-                        <p className="text-white text-[10px] lg:text-sm mb-4 ">Login to access your account.</p>
 
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
+                    <div className="bg-[#00000060] rounded-md p-4 lg:w-80 z-10 w-80 backdrop-blur-lg" >
                         <div>
+                            <h1 className="text-4xl font-bold mb-1 text-white">Welcome Back!</h1>
+                            <p className="text-black text-[12px] lg:text-sm mb-4 ">Login to access your account.</p>
+
                             <InputBox
                                 type="email"
                                 placeholder={'mail@eample.com'} />
@@ -29,13 +31,16 @@ const page = () => {
                         </div>
                     </div>
 
-                    <Link href='./' >
-                        <Button text={"LOGIN"} />
-                    </Link>
-                    <div className="my-2 font-semibold text-white text-center text-sm" >OR</div>
-                    <Link href='signup' >
-                        <SecondryButton text={"SIGN UP"} />
-                    </Link>
+                    <div className='mt-4'>
+                        <Link href='./' >
+                            <Button text={"LOGIN"} />
+                        </Link>
+                        <div className="my-2 font-semibold text-white text-center text-sm" >OR</div>
+                        <Link href='signup' >
+                            <SecondryButton text={"SIGN UP"} />
+                        </Link>
+                    </div>
+
                 </div>
             </div>
         </div>
