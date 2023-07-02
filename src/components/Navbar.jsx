@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Button from './Button';
+import SecondryButton from './SecondryButton';
 
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,10 @@ export const NavBar = () => {
         <nav className='fixed w-[100%]' >
             <div className="flex justify-between items-center px-4 py-2 bg-[#ffffff40] backdrop-blur-lg lg:px-20" >
                 {/* left */}
-                <div className="text-xl font-semibold text-black lg:text-2xl" >LOGO</div>
+
+                <Link href='./' >
+                    <div className="text-xl font-semibold text-black lg:text-2xl" >LOGO</div>
+                </Link>
 
                 {/* cneter */}
                 <div className='hidden lg:flex' >
@@ -37,9 +41,12 @@ export const NavBar = () => {
                 </div>
 
                 {/* rigth */}
-                <div className="hidden lg:flex" >
+                <div className="hidden lg:flex gap-2" >
                     <Link href="login" >
                         <Button text={"LOGIN"} />
+                    </Link>
+                    <Link href="signup" >
+                        <SecondryButton text={"SIGN UP"} />
                     </Link>
                 </div>
 
@@ -67,6 +74,12 @@ export const NavBar = () => {
                     <div className="mt-2">
                         <Link onClick={toggleMenu} href="login" >
                             <Button text={"LOGIN"} />
+                        </Link>
+                    </div>
+
+                    <div className="mt-2">
+                        <Link onClick={toggleMenu} href="signup" >
+                            <SecondryButton text={"SIGN UP"} />
                         </Link>
                     </div>
                 </div>

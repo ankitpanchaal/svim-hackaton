@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from './Button'
+import SecondryButton from './SecondryButton'
+import Link from 'next/link'
 
 const Hero = () => {
     return (
@@ -13,9 +15,12 @@ const Hero = () => {
                     <div className="mt-10 mx-2 ">
                         <div className="m-auto mb-2 w-28">
                             <Button text="BUY" />
+                            {/* <div className="mt-2">
+                                <SecondryButton text="Details" />
+                            </div> */}
                         </div>
                         <div className="font-medium text-sm text-center lg:w-96">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni reiciendis assumenda dolo
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni reiciendis assumenda dolo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni reiciendis assumenda dolo
                         </div>
                     </div>
                 </div>
