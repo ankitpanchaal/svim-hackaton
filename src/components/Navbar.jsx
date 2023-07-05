@@ -37,6 +37,10 @@ export const NavBar = () => {
                         <Link onClick={toggleMenu} href="contact">
                             <li className={liStyle}>CONTECT US</li>
                         </Link>
+
+                        <Link onClick={toggleMenu} href="blog">
+                            <li className={liStyle}>BLOG</li>
+                        </Link>
                     </ul>
                 </div>
 
@@ -69,6 +73,10 @@ export const NavBar = () => {
 
                     <Link onClick={toggleMenu} href="contact">
                         <li className={`${liStyle} mb-4`}>CONTECT US</li>
+                    </Link>
+
+                    <Link onClick={toggleMenu} href="blog">
+                        <li className={`${liStyle} mb-4`}>BLOG</li>
                     </Link>
 
                     <div className="mt-2">

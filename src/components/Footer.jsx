@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div className=' bg-orange-50' >
-            <div className="max-w-[1200px] m-auto flex flex-wrap justify-between gap-12 px-12 py-4 lg:px-24">
+            <div className="max-w-[1200px] m-auto flex flex-wrap justify-between gap-6 lg:gap-12 px-4 py-4 lg:px-24">
 
                 <div className="w-40" >
                     <div className={headerStyle}>

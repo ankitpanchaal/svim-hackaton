@@ -1,6 +1,7 @@
 import Button from '@/components/Button'
 import Header from '@/components/Header'
 import InputBox from '@/components/InputBox'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -22,7 +23,9 @@ const page = () => {
                 </div>
 
                 <div className="mt-4 lg:flex justify-center" >
-                    <Button text="Submit" />
+                    <Link href='./'>
+                        <Button text="Submit" />
+                    </Link>
                 </div>
 
             </div>
