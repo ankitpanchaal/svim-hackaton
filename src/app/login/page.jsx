@@ -9,7 +9,7 @@ const page = () => {
         <div>
             <div className="h-screen w-screen" >
                 <img
-                    src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src="https://www.ugaoo.com/cdn/shop/files/DECOR.jpg?v=1686403513&width=2200"
                     className="h-full w-full object-cover"
                     alt="Fullscreen Image"
                 />

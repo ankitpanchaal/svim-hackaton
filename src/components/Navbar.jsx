@@ -20,7 +20,12 @@ export const NavBar = () => {
                 {/* left */}
 
                 <Link href='./' >
-                    <div className="text-xl font-semibold text-black lg:text-2xl" >LOGO</div>
+                    <div className="flex items-center">
+                        <img src="https://cdn-icons-png.flaticon.com/128/628/628324.png" alt="LOGO"
+                            className="w-10 "
+                        />
+                        <div className="text-sm font-semibold text-[#34c242] lg:text-2xl" >Plant X</div>
+                    </div>
                 </Link>
 
                 {/* cneter */}
@@ -32,6 +37,10 @@ export const NavBar = () => {
 
                         <Link onClick={toggleMenu} href="about">
                             <li className={liStyle}>ABOUT</li>
+                        </Link>
+
+                        <Link onClick={toggleMenu} href="products">
+                            <li className={liStyle}>Products</li>
                         </Link>
 
                         <Link onClick={toggleMenu} href="contact">
@@ -71,6 +80,11 @@ export const NavBar = () => {
                         <li className={`${liStyle} mb-2`}>ABOUT</li>
                     </Link>
 
+
+                    <Link onClick={toggleMenu} href="products">
+                        <li className={liStyle}>Products</li>
+                    </Link>
+
                     <Link onClick={toggleMenu} href="contact">
                         <li className={`${liStyle} mb-4`}>CONTECT US</li>
                     </Link>
@@ -78,6 +92,7 @@ export const NavBar = () => {
                     <Link onClick={toggleMenu} href="blog">
                         <li className={`${liStyle} mb-4`}>BLOG</li>
                     </Link>
+
 
                     <div className="mt-2">
                         <Link onClick={toggleMenu} href="login" >

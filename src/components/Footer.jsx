@@ -6,7 +6,7 @@ const Footer = () => {
     const itemsStyle = "text-[10px] lg:text-[12px] text-orange-600 cursor-pointer ml-2"
 
     return (
-        <div className=' bg-orange-50' >
+        <div className=' bg-orange-50 mt-4' >
             <div className="max-w-[1200px] m-auto flex flex-wrap justify-between gap-6 lg:gap-12 px-4 py-4 lg:px-24">
 
                 <div className="w-40" >
