@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlogCard = ({ item }) => {
     return (
-        <div className="w-52 m-2 duration-300 hover:scale-105 cursor-pointer" >
+        <div className="w-52 m-2 zduration-300 hover:scale-105 cursor-pointer" >
             <img src={item?.imageUrl} alt=""
                 className="w-[100%] h-[120px] object-cover"
             />

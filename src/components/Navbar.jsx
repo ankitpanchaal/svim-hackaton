@@ -15,7 +15,7 @@ export const NavBar = () => {
     const liStyle = "font-medium  hover:font-bold cursor-pointer text-sm uppercase lg:text-[12px]"
 
     return (
-        <nav className='fixed w-[100%]' >
+        <nav className='fixed w-[100%] z-50' >
             <div className="flex justify-between items-center px-4 py-2 bg-[#ffffff40] backdrop-blur-lg lg:px-20" >
                 {/* left */}
 
