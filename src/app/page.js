@@ -1,11 +1,9 @@
-import ProductCard2 from '@/components/ProductCard2'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import ProductCard from '@/components/ProductCard'
 import React from 'react'
 import Products from '@/components/Products'
-import CategoryCard from '@/components/CategoryCard'
 import { Categories } from '@/components/Categories'
+import ReviewCard from '@/components/ReviewCard'
 
 const page = () => {
   return (
@@ -25,10 +23,11 @@ const page = () => {
         <Products />
 
         <div className="mt-10 mb-3" >
-          <Header title={"Highlights"} />
+          <Header title={"Reviews"} />
         </div>
-        <ProductCard />
-        <ProductCard title={"What are you looking for?"} img="https://www.ugaoo.com/cdn/shop/files/PRODUCTRANGE.jpg?v=1686403597&width=2200" />
+        <ReviewCard img={"https://images.pexels.com/photos/3229336/pexels-photo-3229336.jpeg?auto=compress&cs=tinysrgb&w=600"} title="Top Quality"
+          desc="Product Quality: I was quite pleased with the quality of the t-shirts I ordered from this website. The fabrics used were comfortable and had a good weight to them. The printing and designs were well-executed, and the colors remained vibrant even after several washes. It's evident that attention to detail and a commitment to delivering a quality product are important to your brand."
+        />
       </div>
     </div>
   )
