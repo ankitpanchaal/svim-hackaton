@@ -27,7 +27,7 @@ const page = () => {
 
                             <InputBox
                                 type="password"
-                                placeholder={'!@#₹%^&*('} />
+                                placeholder={'!@#$%^&*('} />
                         </div>
                     </div>
 

@@ -4,15 +4,12 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Button from './Button';
 import SecondryButton from './SecondryButton';
-import wa from '@/lib/wa';
 
 export const NavBar = () => {
-    // const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => setIsOpen(!isOpen);
 
-    const handleWhatsApp = () => {
-        wa("Gpogs.fl")
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
 
     const liStyle = "font-medium  hover:font-bold cursor-pointer text-sm uppercase lg:text-[12px]"
@@ -23,9 +20,12 @@ export const NavBar = () => {
                 {/* left */}
 
                 <Link href='./' >
-                    <img src="https://cdn-icons-png.flaticon.com/256/9599/9599122.png" alt="LOGO"
-                        className="w-10 "
-                    />
+                    <div className="flex items-center">
+                        <img src="https://cdn-icons-png.flaticon.com/128/628/628324.png" alt="LOGO"
+                            className="w-10 "
+                        />
+                        <div className="text-sm font-semibold text-[#34c242] lg:text-2xl" >Plant X</div>
+                    </div>
                 </Link>
 
                 {/* cneter */}
@@ -35,14 +35,13 @@ export const NavBar = () => {
                             <li className={liStyle} >HOME</li>
                         </Link>
 
-                        <Link onClick={toggleMenu} href="products">
-                            <li className={liStyle}>Products</li>
-                        </Link>
-
                         <Link onClick={toggleMenu} href="about">
                             <li className={liStyle}>ABOUT</li>
                         </Link>
 
+                        <Link onClick={toggleMenu} href="products">
+                            <li className={liStyle}>Products</li>
+                        </Link>
 
                         <Link onClick={toggleMenu} href="contact">
                             <li className={liStyle}>CONTECT US</li>
@@ -56,7 +55,12 @@ export const NavBar = () => {
 
                 {/* rigth */}
                 <div className="hidden lg:flex gap-2" >
-                    <SecondryButton onClick={handleWhatsApp} text={"WhatsApp"} />
+                    <Link href="login" >
+                        <Button text={"LOGIN"} />
+                    </Link>
+                    <Link href="signup" >
+                        <SecondryButton text={"SIGN UP"} />
+                    </Link>
                 </div>
 
                 <div className='lg:hidden' onClick={toggleMenu} >
@@ -78,11 +82,11 @@ export const NavBar = () => {
 
 
                     <Link onClick={toggleMenu} href="products">
-                        <li className={`${liStyle} mb-2`}>Products</li>
+                        <li className={liStyle}>Products</li>
                     </Link>
 
                     <Link onClick={toggleMenu} href="contact">
-                        <li className={`${liStyle} mb-2`}>CONTECT US</li>
+                        <li className={`${liStyle} mb-4`}>CONTECT US</li>
                     </Link>
 
                     <Link onClick={toggleMenu} href="blog">
@@ -91,7 +95,15 @@ export const NavBar = () => {
 
 
                     <div className="mt-2">
-                        <Button onClick={handleWhatsApp} text={"WhatsApp"} />
+                        <Link onClick={toggleMenu} href="login" >
+                            <Button text={"LOGIN"} />
+                        </Link>
+                    </div>
+
+                    <div className="mt-2">
+                        <Link onClick={toggleMenu} href="signup" >
+                            <SecondryButton text={"SIGN UP"} />
+                        </Link>
                     </div>
                 </div>
             }

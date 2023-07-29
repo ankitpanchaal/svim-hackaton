@@ -14,7 +14,7 @@ const Footer = () => {
                         About
                     </div>
                     <ul>
-                        <li className={`₹{itemsStyle}`}>event compiled client and server successfully in 1583 ms</li>
+                        <li className={`${itemsStyle}`}>event compiled client and server successfully in 1583 ms</li>
                     </ul>
                 </div>
 
@@ -23,9 +23,9 @@ const Footer = () => {
                         Contact
                     </div>
                     <ul className="m-1" >
-                        <li className={`₹{itemsStyle}`}>Phone - +91 9999922233</li>
-                        <li className={`₹{itemsStyle}`}>Phone - +1 9999922233</li>
-                        <li className={`₹{itemsStyle}`}>Email - lorem@gmail.com</li>
+                        <li className={`${itemsStyle}`}>Phone - +91 9999922233</li>
+                        <li className={`${itemsStyle}`}>Phone - +1 9999922233</li>
+                        <li className={`${itemsStyle}`}>Email - lorem@gmail.com</li>
                     </ul>
                 </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
                         Address
                     </div>
                     <ul className="m-1" >
-                        <li className={`₹{itemsStyle}`}>Rajiv Gandhi Circle & Bhawarkuan Square, 4, AB Rd · 075060 10253
+                        <li className={`${itemsStyle}`}>Rajiv Gandhi Circle & Bhawarkuan Square, 4, AB Rd · 075060 10253
                             Open ⋅ Closes 7:30 pm</li>
                     </ul>
                 </div>
